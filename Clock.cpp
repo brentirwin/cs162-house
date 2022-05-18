@@ -98,5 +98,10 @@ void Clock::showTime()
 ****************************************/
 void Clock::check()
 {
-	cout << "It is " << this->timeCode[this->time] << "." << endl << endl;
+	if (this->time == -1)
+    {
+        cout << "It is nearly 11 pm." << endl << endl;
+    } else {
+        cout << "It is " << this->timeCode[this->time] << "." << endl << endl;
+    }
 }

@@ -110,7 +110,7 @@ bool Randomizer::getQuestion2()
 	cout << "\"Very good. Let's see if you can get one more,\" it says with" << endl
 		  << "determination in its eyes." << endl
 		  << endl;
-	getQuestion(question2);
+	return getQuestion(question2);
 }
 
 /****************************************
@@ -224,7 +224,7 @@ bool Randomizer::getQuestion(int x)
 		}
 		else
 		{
-			cout << endl << "\"WRONG!\" it squeals. \"The year was " << names[name] << ".\"" << endl;
+			cout << endl << "\"WRONG!\" it squeals. \"The year was " << years[year] << ".\"" << endl;
 		}
 	}
 
